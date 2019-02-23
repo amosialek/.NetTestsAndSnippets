@@ -19,6 +19,7 @@ namespace Autofac
         private ILogger logger;
         public void Break()
         {
+            logger.Info("Break");
             car.Break();
         }
 
@@ -26,16 +27,17 @@ namespace Autofac
         {
             logger.Info("speed Up");
             car.SpeedUp();
-            Console.WriteLine("speed up");
         }
 
         public void TurnLeft()
         {
+            logger.Info("TurnLeft");
             car.TurnLeft();
         }
 
         public void TurnRight()
         {
+            logger.Info("TurnRight");
             car.TurnRight();
         }
     }
